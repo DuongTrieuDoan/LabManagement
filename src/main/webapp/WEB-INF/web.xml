@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <display-name>School Magement</display-name>
+
+    <servlet>
+        <servlet-name>SchoolSessionServletController</servlet-name>
+        <servlet-class>View.SchoolSessionServletController</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SchoolSessionServletController</servlet-name>
+        <url-pattern>/SchoolSession/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ClientActivityServletController</servlet-name>
+        <servlet-class>View.ClientActivityServletController</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ClientActivityServletController</servlet-name>
+        <url-pattern>/ClientActivity/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>InstructorServletController</servlet-name>
+        <servlet-class>View.InstructorServletController</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>InstructorServletController</servlet-name>
+        <url-pattern>/Instructor/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ClientServletController</servlet-name>
+        <servlet-class>View.ClientServletController</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ClientServletController</servlet-name>
+        <url-pattern>/Client/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ProgramServletController</servlet-name>
+        <servlet-class>View.ProgramServletController</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ProgramServletController</servlet-name>
+        <url-pattern>/Program/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CourseServletController</servlet-name>
+        <servlet-class>View.CourseServletController</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CourseServletController</servlet-name>
+        <url-pattern>/Course/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ClassRoomServletController</servlet-name>
+        <servlet-class>View.ClassRoomServletController</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ClassRoomServletController</servlet-name>
+        <url-pattern>/ClassRoom/*</url-pattern>
+    </servlet-mapping>
+
+    <error-page>
+        <exception-type>java.lang.Exception</exception-type>
+        <location>/pages/Error.jsp</location>
+    </error-page>
+</web-app>
